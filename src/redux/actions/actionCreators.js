@@ -9,3 +9,8 @@ export const userLogoutAction = (user) => ({
   type: actionTypes.logoutUser,
   user,
 });
+
+export const loadUsersAction = (allUsers) => ({
+  type: actionTypes.loadUsers,
+  allUsers,
+})
