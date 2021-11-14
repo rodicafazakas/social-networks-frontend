@@ -1,0 +1,11 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.card__item {
+  display: inline-block;
+  list-style-type: none;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router";
 import useUser from "../../hooks/useUser";
 
@@ -17,14 +17,14 @@ const SignIn = () => {
   };
 
   const onSubmit = (event) => {
-    event.prevent.default();
+    event.preventDefault();
     loginUser(userData);
-    navigate("/profile");
+    navigate("/home");
   }
 
   return (
     <div className="sign-in">
-      <h1>FriendsBook</h1>
+      
       <div className="sign-in__container">
         <h2>Sign in</h2>
 
@@ -33,13 +33,13 @@ const SignIn = () => {
 
             <input className="sign-in__username" 
                    type="text" 
-                   id="sign-in__username" 
+                   id="username"
                    placeholder="Username"
                    onChange={changeUserData} />
 
             <input className="sign-in__password" 
                    type="password" 
-                   id="sign-in__password" 
+                   id="password" 
                    placeholder="Password"
                    onChange={changeUserData} />
 
