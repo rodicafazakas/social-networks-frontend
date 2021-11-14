@@ -1,0 +1,21 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.header__list {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__item {
+  display: inline;
+  padding: 10px 15px;
+  font-weight: bold;
+}
