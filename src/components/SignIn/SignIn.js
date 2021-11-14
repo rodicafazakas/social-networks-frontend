@@ -31,21 +31,24 @@ const SignIn = () => {
         <form className="sign-in__form" autoComplete="off" noValidate onSubmit={onSubmit}>
           <div className="sign-in__inputs">
 
+          <div className="form-control">
             <input className="sign-in__username" 
                    type="text" 
                    id="username"
                    placeholder="Username"
                    onChange={changeUserData} />
+          </div>
 
+<div className="form-control">    
             <input className="sign-in__password" 
                    type="password" 
                    id="password" 
                    placeholder="Password"
                    onChange={changeUserData} />
-
+</div>
+<div className="form-control">
             <button type="submit">Sign in</button>
-
-            <button type="submit">Create new account</button>
+</div>
           </div>
         </form>
       </div>

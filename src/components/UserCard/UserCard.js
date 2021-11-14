@@ -1,8 +1,6 @@
 const UserCard = ( {user}) => {
-
-  
   return (
-    <div className="card">
+    <li data-testid="user-card" className="card">
       <div className="card_image">
         <img src={user.photo} 
             alt={user.name} 
@@ -15,7 +13,7 @@ const UserCard = ( {user}) => {
           <li className="card__item"> <span> {user.bio} </span> </li> 
         </ul>      
       </div>  
-    </div>
+    </li>
   )
 }
 
