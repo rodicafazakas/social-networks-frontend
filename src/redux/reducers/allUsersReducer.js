@@ -1,6 +1,6 @@
 import actionTypes from "../actions/actionTypes";
 
-const allUsersReducer = (allUsers = [], action) => {
+const allUsersReducer = (action, allUsers = []) => {
   let newAllUsers;
 
   switch (action.type) {
