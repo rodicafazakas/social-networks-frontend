@@ -1,9 +1,9 @@
 import actionTypes from "../actions/actionTypes";
 
-const userReducer = (action, user={
+const userReducer = (user={
   isAuthenticated: false,
   user: {},
-}) => {
+}, action) => {
   let newUser;
 
   switch (action.type) {
